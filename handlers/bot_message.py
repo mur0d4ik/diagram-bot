@@ -44,7 +44,8 @@ async def stateInfo_in_generate_diagram(message: Message, state: FSMContext):
     try:
         await message.answer_photo(
             photo=BufferedInputFile(file=img, filename='diagram'),
-            caption='Результат!')
+            caption='Результат!',
+            reply_markup=generate_btn(try_generate).as_markup())
 
     except:
         await message.answer('Ой что-то пошло не так!')

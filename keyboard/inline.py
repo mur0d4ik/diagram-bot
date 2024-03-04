@@ -19,6 +19,10 @@ callback_btn: dict[str, dict] = {
     }
 }
 
+try_generate = {
+    'Ещё раз!': 'select_type_diagram'
+}
+
 def generate_btn(dictionary):
     builder = InlineKeyboardBuilder()
 
