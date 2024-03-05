@@ -48,7 +48,8 @@ async def stateInfo_in_generate_diagram(message: Message, state: FSMContext):
             reply_markup=generate_btn(try_generate).as_markup())
 
     except:
-        await message.answer('Ой что-то пошло не так!')
+        await message.answer('Ой что-то пошло не так!',
+            reply_markup=generate_btn(try_generate).as_markup())
 
     await state.clear()
 
