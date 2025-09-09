@@ -4,7 +4,7 @@ from handlers import bot_message, user_message
 
 # Запуск бота
 async def main():
-    bot = Bot(token="6461362431:AAH1qpMuAWuanAkqpVM4cn2IDav8ZDESyO0")
+    bot = Bot(token="token")
     dp = Dispatcher()
 
     dp.include_routers(
@@ -18,4 +18,5 @@ async def main():
 print('Бот запустился!')
 
 if __name__ == "__main__":
+
     asyncio.run(main())
